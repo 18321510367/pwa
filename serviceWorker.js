@@ -14,7 +14,7 @@ self.addEventListener('install', e => {
 });
 
 self.addEventListener('fetch', e => {
-	e.respondWith(caches.match(e.request)).then(response => {
+	e.respondWith(caches.match(e.request).then(response => {
 		if (response !== undefined) {
 			return response;
 		} else {
@@ -28,5 +28,5 @@ self.addEventListener('fetch', e => {
 				// return caches.match('defaultPage.html');
 			});
 		}	
-	});
+	}));
 });
