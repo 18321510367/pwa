@@ -1,0 +1,21 @@
+{
+    "name": "test Web App",
+    "short_name": "first app",
+    "description": "no common",
+    "icons": [
+        {
+            "src": "/pwa/img/logo.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "/pwa/img/load.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/pwa/index.html",
+    "display": "fullscreen",
+    "theme_color": "#B12A34",
+    "background_color": "#B12A34"
+}
