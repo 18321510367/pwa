@@ -1,7 +1,7 @@
 if('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/pwa/serviceWorker.js')
 		.then(reg => {
-			if (reg.intalling) {
+			if (reg.installing) {
 				console.log('installing');
 			} else if (reg.waiting) {
 				console.log('waiting');
